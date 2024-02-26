@@ -1,13 +1,34 @@
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Muli";
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.decorative-element {
+  position: absolute;
+  right: -10%;
+  top: -40%;
+  width: 986px;
+  height: 986px;
+  content: "";
+  background: #ebfcfa;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media screen and (max-width:1024px) {
+  .decorative-element {
+    display: none;
+  }
 }
