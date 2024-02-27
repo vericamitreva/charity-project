@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: "Muli";
+  font-family: "muli";
 }
 
 code {
@@ -15,20 +15,9 @@ code {
   overflow: hidden;
 }
 
-.decorative-element {
-  position: absolute;
-  right: -10%;
-  top: -40%;
-  width: 986px;
-  height: 986px;
-  content: "";
-  background: #ebfcfa;
-  border-radius: 50%;
-  z-index: -1;
-}
-
-@media screen and (max-width:1024px) {
-  .decorative-element {
-    display: none;
-  }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .navbar {
+        display: none;
+    }
 }

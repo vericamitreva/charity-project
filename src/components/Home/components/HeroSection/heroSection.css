@@ -1,3 +1,16 @@
+.home-hero-section::before {
+    position: absolute;
+    right: -10%;
+    top: -40%;
+    width: 986px;
+    height: 986px;
+    content: "";
+    background: #ebfcfa;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
 .home-hero-section {
   display: flex;
   justify-content: center;
@@ -112,7 +125,7 @@
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
-  padding: 20px 30px;
+  padding: 6%;
   color: white;
 }
 
@@ -147,6 +160,7 @@
 .project-number {
   font-size: 30px;
   font-weight: bolder;
+  font-family: "Roboto Slab", serif;
 }
 
 .total-projects p{
@@ -160,3 +174,64 @@
   z-index: -1;
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .home-hero-section::before {
+    width: 786px;
+    height: 786px;
+  } 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .home-hero-section::before {
+    display: none;
+  }
+
+  .home-hero-section {
+    background: #ebfcfa;
+    padding: 10% 5%;
+  }
+
+  .home-hero-right {
+    display: none;
+  }
+
+  .home-hero-left {
+    width: 100%;
+  }
+
+  .home-hero-left-container-title {
+    margin: 0;
+  }
+
+  .home-hero-left-container-subtitle {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .home-hero-left-container-description {
+    font-size: 18px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  .home-hero-left-container-subtitle {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  /* CSS styles here */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* CSS styles here */
+}
