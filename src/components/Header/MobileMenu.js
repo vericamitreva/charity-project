@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./../Header/mobileMenu.css"
 import { MdClose } from "react-icons/md";
 
