@@ -1,0 +1,35 @@
+.mobile-navbar-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 5%;
+    background: #212158;
+    height: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 20%;
+}
+.mobile-navbar-button-container {
+    align-self: end;
+}
+
+.mobile-navbar-button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 0px;
+    aspect-ratio: 1/1;
+}
+
+.mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}

@@ -1,21 +1,40 @@
 import { useState } from "react"
 import "./header.css"
+import { IoMdMenu } from "react-icons/io";
 import { BiSearch } from "react-icons/bi"
 import { IoClose } from "react-icons/io5";
 import SearchBar from "./SearchBar"
+import MobileMenu from "./MobileMenu";
 
 
 export default function Header() {
 
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     const handleSearchToggle = () => {
-      setIsSearchOpen((isOpen) => !isOpen);
-    };
+        setIsSearchOpen((isOpen) => !isOpen)
+    }
+
+    const handleMobileMenuToggle = () => {
+        setIsMobileMenuOpen((isMenuOpen) => !isMenuOpen)
+    }
 
     return (
         <header>
             <div className="site-header">
+                <div className="mobile-menu">
+                    <button 
+                        className="mobile-menu-button"
+                        onClick={handleMobileMenuToggle}
+                    >
+                        <IoMdMenu color="white" size={30}/>
+                    </button>
+                    <MobileMenu 
+                        isMobileMenuOpen={isMobileMenuOpen} 
+                        handleMobileMenuToggle={handleMobileMenuToggle} 
+                    />
+                </div>
                 <div className="logo">
                     <svg width="190" height="auto" viewBox="0 0 534 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M75.7806 13.7457C75.7806 21.3381 69.6646 27.4914 62.1182 27.4914C54.5719 27.4914 48.4558 21.3381 48.4558 13.7457C48.4558 6.15333 54.5719 0 62.1182 0C69.6646 0 75.7806 6.15333 75.7806 13.7457Z" fill="#70C3D9"/>
