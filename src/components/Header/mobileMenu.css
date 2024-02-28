@@ -28,6 +28,21 @@
     gap: 20px;
 }
 
+.item-button {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 0;
+    height: 25px;
+}
+
+.mobile-navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .mobile-navbar a {
     color: white;
     text-decoration: none;
