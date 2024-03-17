@@ -186,4 +186,73 @@
   background: linear-gradient(to right, #41b2a5, rgba(93, 196, 184, 0.75));
 }
 
+@media screen and (max-width: 1440px){
+    .home-about-container{
+        gap: 40px;
+    }
+}
 
+@media screen and (max-width: 1330px){
+    .home-about-container{
+        margin-inline: 5em;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .home-about-container{
+        flex-direction: column !important;
+    }
+
+    .home-about-container::before{
+        display: none;
+    }
+
+    .about-left-section{
+        width: 100%;
+    }
+
+    .about-right-section{
+        width: 100%;
+    }
+
+    .right-section-container{
+        margin-top: 0;
+    }
+
+    .total-raised{
+        position: relative;
+        left: -30px;
+        top: -130px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .total-raised{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .home-about-container{
+        margin-inline: 2em;
+    }
+    .total-raised{
+        top: 0;
+        left: 0;
+    }
+    .total-raised-icon{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 17px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .total-raised{
+        width: 90%;
+    }
+  
+}
