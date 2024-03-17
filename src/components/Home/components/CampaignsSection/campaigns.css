@@ -1,0 +1,183 @@
+.featured-campaigns{
+    padding-top: 80px;
+    z-index: 100;
+}
+
+.featured-campaigns-container{
+    margin-inline: 10em;
+}
+
+.campaigns-heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.campaigns-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.campaigns-title{
+    font-size: 18px;
+    font-size: 1.2rem;
+    color: #ef5f34;
+    font-family: "Roboto Slab", serif;
+}
+
+.campaigns-heading{
+    font-size: 40px;
+    font-size: 2.6666666667rem;
+    margin: 0;
+    position: relative;
+    text-transform: capitalize;
+    font-family: "Roboto Slab", serif;
+    margin: 15px 0 20px;
+    font-weight: 500;
+    color: #212158;
+}
+
+.campaigns-paragraph{
+    max-width: 580px;
+    font-size: 18px;
+    margin: auto;
+    line-height: 1.5;
+    color: #4f555a;
+    text-align: center;
+}
+
+.card-1,
+.card-2,
+.card-3{
+    width: 33%;
+    border: 1px solid transparent;
+    padding: 0 20px 20px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 0px rgba(62, 65, 159, 0.15);
+}
+
+.card-img{
+    /* max-width: 300px; */
+    width: 100%;
+    border-radius: 10px;
+}
+
+.thumb{
+    position: relative;
+    left: 20px;
+    top: 30px;
+    background: linear-gradient(to left, #ef5f34, #e34212);
+    padding: 4px 20px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.card-heading{
+    font-size: 22px;
+    font-family: "Roboto Slab", serif;
+    color: #212158;
+}
+
+.card-heading:hover{
+    cursor: pointer;
+    color: #ef5f34;
+}
+
+.progress-percent{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #212158;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.45);
+    font-weight: 600;
+}
+
+.campaign-progress { 
+    background-color: #f9ded6;
+    width: 100%; 
+    border-radius: 15px; 
+} 
+
+.percentage { 
+    border-radius: 15px;
+    box-shadow: none;
+    position: relative;
+    -webkit-animation: animate-positive 4s;
+    animation: animate-positive 4s;
+    width: 100%;
+    background: #ef5f34;
+    height: 8px;
+} 
+
+.card-3-percentage{
+    border-radius: 15px;
+    box-shadow: none;
+    position: relative;
+    -webkit-animation: animate-positive 4s;
+    animation: animate-positive 4s;
+    width: 77%;
+    background: #ef5f34;
+    height: 8px;
+}
+
+.campaign-money,
+.user-donate{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0 !important;
+}
+
+.campaign-money li{
+    font-weight: 600;
+}
+
+
+li{
+    font-size: 14px;
+    color: #212158;
+    display: flex;
+    align-items: center;
+}
+
+.user-donate{
+    padding-top: 30px;
+    border-top: 1px solid #ebebeb;;
+}
+
+.donate-btn{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    border-radius: 40px;
+    border: 1px solid #5dc4b8;
+    color: #212158;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.donate-btn:hover{
+    background-color:#5dc4b8 ;
+    color: #fff;
+}
+
+.user-img{
+    max-width: 45px;
+    margin-right: 10px;
+}
+.user-image{
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-name{
+    font-weight: 700;
+}

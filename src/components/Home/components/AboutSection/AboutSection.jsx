@@ -38,7 +38,6 @@ const AboutSection = () => {
                                     <div class="percentage"></div> 
                                 </div> 
 
-          
                                 </div>
                             </div>
                         </div>
