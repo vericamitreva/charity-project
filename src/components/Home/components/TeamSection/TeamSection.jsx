@@ -61,42 +61,42 @@ export default function TeamSection() {
                             <div className="image-container">
                                 <img src={Team1} alt="Img"/>
                                 <div className="name-container">
-                                    <a href="#">Angelical Laura</a>
+                                    <a href="/">Angelical Laura</a>
                                     <p>Volunteer</p>
                                 </div>
                             </div>
                             <div className="image-container">
                                 <img src={Team2} alt="Img"/>
                                 <div className="name-container">
-                                    <a href="#">Maria Belizean</a>
+                                    <a href="/">Maria Belizean</a>
                                     <p>Volunteer</p>
                                 </div>
                             </div>
                             <div className="image-container">
                                 <img src={Team3} alt="Img"/>
                                 <div className="name-container">
-                                    <a href="#">Robert Churls</a>
+                                    <a href="/">Robert Churls</a>
                                     <p>Team Leader</p>
                                 </div>
                             </div>
                             <div className="image-container">
                                 <img src={Team4} alt="Img"/>
                                 <div className="name-container">
-                                    <a href="#">William Frost</a>
+                                    <a href="/">William Frost</a>
                                     <p>Volunteer</p>
                                 </div>
                             </div>
                             <div className="image-container">
                                 <img src={Team5} alt="Img"/>
                                 <div className="name-container">
-                                    <a href="#">Zanifer Marry</a>
+                                    <a href="/">Zanifer Marry</a>
                                     <p>Volunteer</p>
                                 </div>
                             </div>
                             <div className="image-container">
                                 <img src={Team6} alt="Img"/>
                                 <div className="name-container">
-                                    <a href="#">Devid Harmin</a>
+                                    <a href="/">Devid Harmin</a>
                                     <p>Volunteer</p>
                                 </div>
                             </div>

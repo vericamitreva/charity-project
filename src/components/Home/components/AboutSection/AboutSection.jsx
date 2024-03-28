@@ -58,7 +58,7 @@ const AboutSection = () => {
                         <li className="about-list-item">Making this the first true generator on the Internet.</li>
                     </ul>
 
-                    <a href="#" className="home-about-btn-link">
+                    <a href="/" className="home-about-btn-link">
                         <button className="home-about-button">More About</button>
                     </a>
                     </div>
