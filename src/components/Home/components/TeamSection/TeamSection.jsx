@@ -8,9 +8,6 @@ import Team3 from "./../../../../assets/home/team-3.jpg"
 import Team4 from "./../../../../assets/home/team-4.jpg"
 import Team5 from "./../../../../assets/home/team-5.jpg"
 import Team6 from "./../../../../assets/home/team-6.jpg"
-import { useState } from "react";
-import { useEffect } from "react";
-
 
 export default function TeamSection() {
     const settings = {
