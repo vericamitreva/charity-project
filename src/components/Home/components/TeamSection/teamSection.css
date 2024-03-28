@@ -1,0 +1,93 @@
+.team-section-container{
+    background-color: #FEF6F3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 10%;
+    margin-block: 10%;
+}
+
+.text-container {
+    max-width: 50%;
+    text-align: center;
+}
+
+.text-container span {
+    font-size: 1.2rem;
+    color: #ef5f34;
+    font-family: "Roboto Slab", serif;
+}
+
+.text-container h2 {
+    font-size: 2.67rem;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: "Roboto Slab", serif;
+    margin: 15px 0 20px;
+    font-weight: 500;
+    color: #212158;
+}
+
+.text-container p {
+    font-size: 18px;
+    margin: auto;
+    line-height: 1.5;
+    color: #4f555a;
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    width: 120%;
+    padding-top: 40px;
+}
+
+
+.image-container {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    display: block;
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+
+.name-container {
+    align-items: start;
+    padding-inline-start: 5%;
+    margin-top: 20px;
+}
+
+.name-container a {
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #212158;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+}
+
+.name-container a:hover {
+    color: #ef5f34;
+}
+
+.name-container p {
+    line-height: 1.7em;
+    margin: 0 0 1.5em;
+}
+
+@media only screen and (max-width: 1200px) {
+    .text-container {
+        max-width: 70%;
+    }
+
+    .text-container h2 {
+        font-size: 2.3rem;
+    }
+}
+
