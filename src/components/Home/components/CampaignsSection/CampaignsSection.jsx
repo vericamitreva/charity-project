@@ -44,7 +44,7 @@ const FeaturedCampaigns = () => {
                                         <span className="user-name">Laura Fairey</span>
                                     </li>
                                     <li>
-                                        <a href="" className="donate-btn">Donate now</a>
+                                        <a href="#" className="donate-btn">Donate now</a>
                                     </li>
                                 </ul>
                             </div>
@@ -82,7 +82,7 @@ const FeaturedCampaigns = () => {
                                         <span className="user-name">Laura Fairey</span>
                                     </li>
                                     <li>
-                                        <a href="" className="donate-btn">Donate now</a>
+                                        <a href="#" className="donate-btn">Donate now</a>
                                     </li>
                                 </ul>
                             </div>
@@ -119,7 +119,7 @@ const FeaturedCampaigns = () => {
                                         <span className="user-name">Laura Fairey</span>
                                     </li>
                                     <li>
-                                        <a href="" className="donate-btn">Donate now</a>
+                                        <a href="#" className="donate-btn">Donate now</a>
                                     </li>
                                 </ul>
                             </div>
