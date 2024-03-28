@@ -13,38 +13,34 @@ import { useEffect } from "react";
 
 
 export default function TeamSection() {
-    const [slidesToShow, setSlidesToShow] = useState(calculateSlidesToShow());
-
-    useEffect(() => {
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
-    const handleResize = () => {
-        setSlidesToShow(calculateSlidesToShow());
-    };
-
     const settings = {
         dots: false,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 1500,
         speed: 500,
-        slidesToShow: calculateSlidesToShow(),
-        slidesToScroll: 1
-    }
-
-    function calculateSlidesToShow() {
-        const viewportWidth = window.innerWidth;
-        if (viewportWidth >= 1200) {
-          return 5;
-        } else if (viewportWidth >= 992) {
-          return 4;
-        } else {
-          return 3;
-        }
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+              }
+            },
+            {
+              breakpoint: 700,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+              }
+            }
+          ]
     }
 
     return (
