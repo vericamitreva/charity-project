@@ -34,8 +34,8 @@ const AboutSection = () => {
                                     <span className='total-raised-number'>$25000</span>
                                 </div>
                                 <div className="total-raised-progress">
-                                <div class="progress-container"> 
-                                    <div class="percentage"></div> 
+                                <div className="progress-container"> 
+                                    <div className="percentage"></div> 
                                 </div> 
 
                                 </div>

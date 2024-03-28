@@ -17,7 +17,7 @@ const FeaturedCampaigns = () => {
                 <div className="campaigns-area">
                     <div className="card-1">
                         <div className="campaign-img">
-                            <span class="thumb">Medicine</span>
+                            <span className="thumb">Medicine</span>
                             <img src={CampaignImg1} alt="" className="card-img"/>
                         </div>
                         <div className="campaign-content">
@@ -55,7 +55,7 @@ const FeaturedCampaigns = () => {
 
                     <div className="card-2">
                     <div className="campaign-img">
-                    <span class="thumb">Food</span>
+                    <span className="thumb">Food</span>
                     <img src={CampaignImg2} alt="" className="card-img"/>
                     </div>
                     <div className="campaign-content">
@@ -93,7 +93,7 @@ const FeaturedCampaigns = () => {
 
                     <div className="card-3">
                     <div className="campaign-img">
-                    <span class="thumb">Education</span>
+                    <span className="thumb">Education</span>
                     <img src={CampaignImg3} alt="" className="card-img" />
                     </div>
                     <div className="campaign-content">
