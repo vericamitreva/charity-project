@@ -1,0 +1,152 @@
+.testimonial-section{
+    position: relative;
+}
+
+.testimonial-section-container{
+    margin-inline: 5em;
+    margin-bottom: 80px;
+}
+.testimonial-heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.testimonial-title{
+    font-size: 18px;
+    font-size: 1.2rem;
+    color: #ef5f34;
+    font-family: "Roboto Slab", serif;
+}
+
+.testimonial-heading{
+    font-size: 40px;
+    font-size: 2.6666666667rem;
+    margin: 0;
+    position: relative;
+    text-transform: capitalize;
+    font-family: "Roboto Slab", serif;
+    margin: 15px 0 20px;
+    font-weight: 500;
+    color: #212158;
+}
+
+.testimonial-paragraph{
+    max-width: 580px;
+    font-size: 18px;
+    margin: auto;
+    line-height: 1.5;
+    color: #4f555a;
+    text-align: center;
+}
+
+.testimonial-slider-container{
+    display: flex;
+}
+
+.item-1,
+.item-2,
+.item-3{
+    width: 550px;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.img-container{
+    width: 100%;
+}
+
+.img-container img{
+    border-radius: 50%;
+}
+.leftarrow{
+    position: absolute;
+    content: "\f108";
+    left: 46%;
+    bottom: -30px;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    line-height: 46px;
+    text-align: center;
+    background: #fff;
+    transition: all 0.3s;
+    border: 1px solid #ebebeb;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.rightarrow{
+    position: absolute;
+    right: 46%;
+    bottom: -30px;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    line-height: 46px;
+    text-align: center;
+    background: #fff;
+    transition: all 0.3s;
+    border: 1px solid #ebebeb;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+.testimonial-desc{
+    font-size: 22px;
+    line-height: 42px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+    color: #4f555a;
+}
+
+
+.testimonial-desc::before{
+    position: absolute;
+    left: -35px;
+    top: -50px;
+    content: "\201E";
+    font-family: "Flaticon";
+    z-index: -1;
+    font-size: 160px;
+    color: #fbb59f;
+}
+
+.testimonial-name{
+    font-size: 25px;
+    font-weight: 600;
+    color: #212158;
+    font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (max-width:1280px){
+    .item-1,
+    .item-2,
+    .item-3{
+    padding: 30px;
+}
+}
+
+@media screen and (max-width:991px){
+    .testimonial-section-container{
+        margin-inline: 3em;
+    }
+    .testimonial-heading-container{
+        padding: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .img-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
