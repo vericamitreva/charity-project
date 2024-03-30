@@ -22,6 +22,7 @@
     gap: 30px;
 }
 
+
 .campaigns-title{
     font-size: 18px;
     font-size: 1.2rem;
@@ -181,3 +182,71 @@ li{
 .user-name{
     font-weight: 700;
 }
+
+@media screen and (max-width: 1280px){
+    .featured-campaigns-container{
+        margin-inline: 5em;
+    }
+    
+    li{
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 991px){
+    .featured-campaigns-container{
+        margin-inline: 5em;
+    }
+    .campaigns-area{
+        flex-wrap: wrap;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .featured-campaigns-container{
+        margin-inline: 2em;
+    }
+
+    .campaigns-area{
+        flex-direction: column;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3{
+        width: 100%;
+    }
+
+    .campaigns-title,
+    .campaigns-heading,
+    .campaigns-paragraph{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .campaigns-heading-container{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .campaigns-heading{
+        font-size: 22px;
+    }
+
+    .campaigns-paragraph{
+        font-size: 16px;
+    }
+
+    li{
+        font-size: 12px;
+       }
+}
+
