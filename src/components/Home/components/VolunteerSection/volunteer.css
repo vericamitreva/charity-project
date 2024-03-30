@@ -1,0 +1,132 @@
+.volunteer-section{
+    margin-top: 50px;
+}
+.volunteer-section-container{
+    padding: 100px 80px;
+    background: linear-gradient(to left, rgba(239, 95, 52, 0.75), #ed4918);
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    padding-right: 470px;
+    margin-inline: 1em;
+    max-height: 360px;
+}
+
+.volunteer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volunteer-heading{
+    max-width: 560px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 80px;
+    margin: 0;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+}
+
+.volunteer-btn{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: #fff;
+    border-radius: 5px;
+    color: #062265;
+    font-weight: 500;
+    width: 230px;
+    font-size: 17px;
+    justify-content: center;
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    height: 30px;
+}
+
+.volunteer-img{
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+}
+
+.shape{
+    position: absolute;
+    left: -10%;
+    top: -10%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1280px){
+    .volunteer-heading{
+        max-width: 390px;
+        font-size: 32px;
+    }
+
+    .volunteer-btn{
+        width: 200px !important;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .volunteer-section-container{
+        max-height: 200px !important;
+    }
+    .volunteer-content{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .volunteer-section-container{
+        max-height: 170px !important;
+    }
+
+    .volunteer-content{
+        gap: 30px;
+    }
+
+    .volunteer-heading{
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .volunteer-img{
+        right: 10px;
+    }
+
+    .volunteer-img img{
+        width: 80%;
+    }
+
+    .volunteer-btn{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .volunteer-img{
+        display: none !important;
+    }
+
+
+    .volunteer-section-container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .volunteer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 970px;
+    }
+
+    .volunteer-heading{
+        max-width: 100%;
+        width: 100%;
+    }
+}
