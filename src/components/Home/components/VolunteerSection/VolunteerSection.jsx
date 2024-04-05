@@ -11,7 +11,7 @@ export default function Volunteer() {
                     Lets Change The World With Humanity
                     </h2>
 
-                    <a href="#" className="volunteer-btn">Become A Volunteer</a>
+                    <a href="/" className="volunteer-btn">Become A Volunteer</a>
                 </div>
 
                 <div className="volunteer-img">

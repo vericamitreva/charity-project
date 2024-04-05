@@ -23,28 +23,26 @@ export default function TestimonialSection() {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
       if (screenWidth < 767) {
-        setSliderSettings({
-          ...sliderSettings,
+        setSliderSettings((prevSettings) => ({
+          ...prevSettings,
           slidesToShow: 1,
           slidesToScroll: 1
-        });
+        }));
       } else {
-        setSliderSettings({
-          ...sliderSettings,
+        setSliderSettings((prevSettings) => ({
+          ...prevSettings,
           slidesToShow: 2,
           slidesToScroll: 1
-        });
+        }));
       }
     };
-
+  
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
-
+  }, [sliderSettings]);
  
-
   return (
     <section className="testimonial-section">
       <div className="testimonial-section-container">
