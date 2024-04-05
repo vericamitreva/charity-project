@@ -5,7 +5,7 @@ import Test3 from "./../../../../assets/home/test-3.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export default function TestimonialSection() {
 
@@ -16,7 +16,7 @@ export default function TestimonialSection() {
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, 
+    autoplaySpeed: 3000
   });
 
   useEffect(() => {

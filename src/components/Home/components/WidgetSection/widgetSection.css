@@ -63,7 +63,6 @@
     font-family: 'Roboto Slab', serif;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
     .home-widget-section-container {
         grid-template-columns: 1fr 1fr;
@@ -73,7 +72,6 @@
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
     .home-widget-section-container {
         gap: 5rem 5rem;
@@ -81,12 +79,10 @@
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 650px) {
     .home-widget-section-container {
         grid-template-columns: 1fr;

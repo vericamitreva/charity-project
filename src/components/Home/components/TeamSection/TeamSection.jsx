@@ -48,7 +48,7 @@ export default function TeamSection() {
                     <h2> Meet Our Volunteer Team </h2>
                     <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. </p>
                 </div>
-                <div className="slider-container">
+                <div className="team-slider-container">
                     <div className="slider">
                         <Slider {...settings}>
                             <div className="image-container">

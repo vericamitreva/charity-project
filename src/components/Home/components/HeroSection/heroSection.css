@@ -1,17 +1,17 @@
 .home-hero-section::before {
-    position: absolute;
-    right: -10%;
-    top: -40%;
-    width: 986px;
-    height: 986px;
-    content: "";
-    background: #ebfcfa;
-    border-radius: 50%;
-    z-index: -1;
+  position: absolute;
+  right: -20%;
+  top: -60%;
+  width: 986px;
+  height: 986px;
+  content: "";
+  background: #ebfcfa;
+  border-radius: 50%;
+  z-index: -1;
 }
 
-
 .home-hero-section {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 5%;

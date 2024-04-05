@@ -6,6 +6,9 @@ import FeaturedCampaigns from "./components/CampaignsSection/CampaignsSection"
 import TeamSection from "./components/TeamSection/TeamSection"
 import TestimonialSection from "./components/TestimonialSection/TestimonialSection"
 import Volunteer from "./components/VolunteerSection/VolunteerSection"
+import EventsSection from "./components/EventsSection/EventsSection"
+import OurBlogSection from "./components/OurBlogSection/OurBlogSection"
+import PartnersDonorsSection from "./components/PartnersDonorsSection/PartnersDonorsSection"
 
 export default function Home() {
     return (
@@ -17,6 +20,9 @@ export default function Home() {
             <TeamSection />
             <TestimonialSection />
             <Volunteer />
+            <EventsSection />
+            <OurBlogSection />
+            <PartnersDonorsSection />
         </div>
     )
 }

@@ -1,0 +1,159 @@
+.blog-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 8%;
+    background-color: #FEF6F3;
+    height: auto;
+}
+
+.blog-text-container {
+    max-width: 50%;
+    text-align: center;
+}
+
+.blog-text-container span {
+    font-size: 1.2rem;
+    color: #ef5f34;
+    font-family: "Roboto Slab", serif;
+}
+
+.blog-text-container h2 {
+    font-size: 2.67rem;
+    margin: 0;
+    text-transform: capitalize;
+    font-family: "Roboto Slab", serif;
+    margin: 15px 0 20px;
+    font-weight: 500;
+    color: #212158;
+}
+
+.blog-text-container p {
+    font-size: 18px;
+    margin: auto;
+    line-height: 1.5;
+    color: #4f555a;
+    text-align: center;
+}
+
+.blog-cards-container {
+    padding: 4% 6%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: 3%;
+    height: auto;
+}
+
+.blog-card {
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    max-width: 100%;
+    padding: 0;
+    box-shadow: 0px 1px 15px 0px rgba(62, 65, 159, 0.15);
+    border-radius: 15px;
+}
+
+.blog-card img {
+    position: relative;
+    display: block;
+    width: 100%; 
+    height: auto;
+    border: none;
+    box-shadow: none;
+    border-radius: 15px 15px 0 0;
+}
+
+.blog-card-text {
+    margin: 4%;
+}
+
+.blog-card-text h2 {
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: 500;
+}
+
+.blog-card-text a {
+    font-family: "Roboto Slab", serif;
+    box-shadow: none;
+    text-decoration: none;
+    color: #212158;
+}
+
+.blog-card-text a:hover {
+    color: #ef5f34;
+}
+
+.author-box {
+    width: 100%;
+    padding-top: 4%;
+    border-top: 1px solid #f3f3fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.author h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 500;
+    color: #212158;
+    font-family: 'Roboto Slab', serif;
+}
+
+.date {
+    font-size: 15px;
+    color: #848892;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .blog-card-text h2 {
+        font-size: 20px;
+    }
+
+    .author h4 {
+        font-size: 15px;
+    }
+
+    .date {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .blog-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .blog-cards-container {
+        grid-template-columns: repeat(1,1fr);
+        gap: 1%;
+    }
+
+}
