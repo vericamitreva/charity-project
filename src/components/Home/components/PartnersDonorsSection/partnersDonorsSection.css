@@ -38,7 +38,7 @@
 
 .partner-slider-container {
     position: relative;
-    width: 120%;
+    width: 100%;
     padding-top: 8%;
 }
 
@@ -52,7 +52,7 @@
 .partner-image-container img {
     display: block;
     height: auto;
-    width: 50%;
+    width: 40%;
     margin: auto;
 }
 

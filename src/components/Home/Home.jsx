@@ -9,6 +9,7 @@ import Volunteer from "./components/VolunteerSection/VolunteerSection"
 import EventsSection from "./components/EventsSection/EventsSection"
 import OurBlogSection from "./components/OurBlogSection/OurBlogSection"
 import PartnersDonorsSection from "./components/PartnersDonorsSection/PartnersDonorsSection"
+import FooterSection from "./components/FooterSeaction/FooterSection"
 
 export default function Home() {
     return (
@@ -23,6 +24,7 @@ export default function Home() {
             <EventsSection />
             <OurBlogSection />
             <PartnersDonorsSection />
+            <FooterSection />
         </div>
     )
 }

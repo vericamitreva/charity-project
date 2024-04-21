@@ -1,0 +1,158 @@
+.footer-section-container {
+    background-color: #29395b;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+/* .footer-about-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+    gap: 20px;
+} */
+
+.footer-about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+    /* grid-gap: 20px; */
+    padding: 5% 10%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    /* width: 24%; */
+    gap: 30px;
+}
+
+.column img {
+    max-width: 50%;
+}
+
+.column p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.column h3 {
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    font-family: "Roboto Slab", serif;
+}
+
+.socials {
+    display: flex;
+    gap: 3%;
+}
+
+.icon {
+    background-color: #3F4D6B;
+    border-radius: 50%;
+    padding: 5px 8px;
+    aspect-ratio: 1/1;
+}
+
+.icon svg {
+    margin: auto;
+}
+
+.column-link {
+    /* padding-left: 5%; */
+    padding-left: 20%;
+}
+
+.inner-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.email-submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #334770;
+    border: 0;
+}
+
+.email-input {
+    background: #334770;
+    border: 0;
+    color: #a9a9a9;
+}
+
+.submit-button {
+    background: #ef5f34;
+    padding: 5px 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.column a {
+    color: white;
+    text-decoration: none;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+.column-row {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.footer-label-container {
+    background-color:#192847;
+    padding: 20px 60px;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-label-container p {
+    margin: 0;
+}
+
+.footer-label-container a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+   
+}
+
+@media only screen and (max-width: 992px) {
+    .footer-about-container {
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
+        grid-gap: 40px ;
+    }
+
+    .column-link {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-about-container {
+        grid-template-columns: repeat(auto-fit, minmax(60%, 1fr)); 
+    }
+
+}
