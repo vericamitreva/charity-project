@@ -14,7 +14,7 @@ export default function FooterSection () {
         <section className="footer-section-container">
             <div className="footer-about-container"> 
                 <div className="column">
-                    <img src={Logo}></img>
+                    <img src={Logo} alt="logo"></img>
                     <p> Welcome and open yourself to your truest love this year with us! With the Release Process </p>
                     <div className="socials">
                         <div className="icon"><a href="/"><FaFacebookF/></a></div>
