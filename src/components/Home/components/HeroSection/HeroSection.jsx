@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import LeftImg from "../../../../assets/home/right-img2.png"
 import RightImg from "../../../../assets/home/right-img.png"
 import './heroSection.css'
@@ -11,6 +11,8 @@ import ProjectShapeImg from "../../../../assets/home/project-shape.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { TfiArrowUp } from "react-icons/tfi";
+
 
 const HeroSection = () => {
   const settings = {
@@ -22,6 +24,31 @@ const HeroSection = () => {
     slidesToShow: 4,
     slidesToScroll: 1
   }
+
+  const [showScroll, setShowScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScroll(true);
+      } else {
+        setShowScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <section className="home-hero-section">
@@ -94,6 +121,11 @@ const HeroSection = () => {
           <div className="home-hero-right-right-img">
             <img src={RightImg} alt="Img"/>
           </div>
+        </div>
+      </div>
+      <div className={`arrow-up ${showScroll ? "show" : ""}`} onClick={scrollToTop}> 
+        <div style={{color: "#ffff", fontSize: "25px", textAlign: "center", display: "inline-block", width: "100%", height: "100%"}}>
+          <TfiArrowUp style={{margin: "auto"}}/>
         </div>
       </div>
     </section>

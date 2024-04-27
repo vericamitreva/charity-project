@@ -7,6 +7,7 @@ header {
 
 .mobile-menu{
     display: none;
+    line-height: 20px;
 }
 
 .mobile-menu-button {
@@ -15,6 +16,8 @@ header {
     border: none;
     border-radius: 0.25rem;
     transition: box-shadow .15s ease-in-out;
+    line-height: 0;
+    padding: 7px 8px;
 }
 
 .logo {

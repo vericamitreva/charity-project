@@ -163,7 +163,7 @@
   font-family: "Roboto Slab", serif;
 }
 
-.total-projects p{
+.total-projects p {
   margin: 0;
 }
 
@@ -172,6 +172,28 @@
   right: -197px;
   top: -100px;
   z-index: -1;
+}
+
+.arrow-up {
+  background-color: rgba(239, 95, 52, 0.7);
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
+  border: 2px solid #ef5f34;
+  border-radius: 45px;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  right: 15px;
+  bottom: 15px;
+  opacity: 0; 
+  transition: opacity 0.9s, background-color 0.9s;
+}
+
+.arrow-up.show {
+  opacity: 1; 
+  background-color: rgba(239, 95, 52, 0.8);
+  transition: opacity 0.9s, background-color 0.9s;
 }
 
 @media only screen and (max-width: 1200px) {
