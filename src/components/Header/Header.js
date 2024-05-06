@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./header.css"
 import { IoMdMenu } from "react-icons/io";
+import { MdClose } from "react-icons/md";
 import { BiSearch } from "react-icons/bi"
 import { IoClose } from "react-icons/io5";
 import SearchBar from "./SearchBar"
@@ -25,10 +26,14 @@ export default function Header() {
             <div className="site-header">
                 <div className="mobile-menu">
                     <button 
-                        className="mobile-menu-button"
+                        className={isMobileMenuOpen ? 'mobile-menu-button open' : 'mobile-menu-button'}
                         onClick={handleMobileMenuToggle}
                     >
-                        <IoMdMenu color="white" size={30}/>
+                        {isMobileMenuOpen ? (
+                            <MdClose size={30} color='white'/>
+                        ) : (
+                            <IoMdMenu color="white" size={30}/>
+                        )}
                     </button>
                     <MobileMenu 
                         isMobileMenuOpen={isMobileMenuOpen} 
@@ -71,13 +76,10 @@ export default function Header() {
 
             </div>
             <div className="search-bar-container">
-                <SearchBar />
+                <SearchBar 
+                isSearchOpen={isSearchOpen} 
+                handleSearchToggle={handleSearchToggle} />
             </div>
-            {isSearchOpen && (
-                <div className="search-bar-container:active">
-                    <SearchBar />
-                </div>
-            )}
         </header>
     );
 }

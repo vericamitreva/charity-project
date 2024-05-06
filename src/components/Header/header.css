@@ -15,7 +15,7 @@ header {
     background-color: #ef5f34;
     border: none;
     border-radius: 0.25rem;
-    transition: box-shadow .15s ease-in-out;
+    transition: transform 0.9s ease-in;
     line-height: 0;
     padding: 7px 8px;
 }
@@ -80,21 +80,15 @@ header {
 }
 
 .search-bar-container {
-    opacity: 0;
-}
-
-.search-bar-container:active {
     opacity: 1;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
     .header-button-donate {
         display: none;
     }
 }
   
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
     .navbar {
         display: none;
@@ -112,19 +106,4 @@ header {
         background-color: white;
     }
 
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-/* CSS styles here */
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-/* CSS styles here */
 }

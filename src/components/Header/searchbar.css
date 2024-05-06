@@ -1,7 +1,5 @@
-
-.searchbar{
+.search-bar {
   position: absolute; 
-  top: 75px; 
   right: 0; 
   margin: 20px 30px;
   width: 350px; 
@@ -15,6 +13,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.search-bar.open {
+  opacity: 1;
+  transform: scale(1); 
 }
   
 .search-items{

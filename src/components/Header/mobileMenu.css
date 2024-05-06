@@ -4,12 +4,19 @@
     flex-direction: column;
     gap: 5%;
     padding: 5%;
-    background: #212158;
-    height: 100%;
-    z-index: 99999;
     top: 0;
-    left: 0;
+    opacity: 0;
+    left: -400px; 
     width: 25%;
+    height: 100%;
+    background: #212158;
+    transition: left 0.5s ease-in, opacity 0.5s ease-in; 
+    z-index: 1000;
+}
+
+.mobile-navbar-container.open {
+    left: 0;
+    opacity: 1;
 }
 
 .mobile-navbar-button-container {
@@ -21,6 +28,10 @@
     border: 1px solid white;
     padding: 2px;
     line-height: 0;
+}
+
+.mobile-navbar-button.open {
+    transition: transform 0.9s ease-in-out;
 }
 
 .mobile-navbar {
