@@ -23,22 +23,24 @@
     width: 50%;
 }
 
-.home-about-image-container{
+.home-about-image-container {
+    position: relative;
     max-width: 505px;
 }
 
-.home-about-img::before {
+.home-about-img-line {
     position: absolute;
-    left: 2%;
-    top: 2%;
+    left: 1.8%;
+    top: 1.5%;
     content: "";
     width: 96%;
     height: 96%;
     border: 1px solid #fff;
+    z-index: 9999;
     border-radius: 250px 250px 16.73px 16.73px;
 }
 
-.home-about-img{
+.home-about-img {
     position: relative;
     z-index: 1;
     width: 100%;
@@ -60,6 +62,7 @@
     position: relative;
     left: 58px;
     top: 70px;
+    z-index: 99999;
 }
 
 .total-raised-progress {
@@ -81,6 +84,7 @@
     bottom: 70px;
     width: fit-content;
     display: block;
+    z-index: 9999;
 }
 
 .total-raised-wrap{
@@ -173,24 +177,18 @@
     padding-left: 0;
 }
 
+.home-about-list span {
+    padding-right: 10px;
+    line-height: 0;
+}
+
 .about-list-item{
     padding: 6px 0;
-    padding-left: 30px;
     position: relative;
     line-height: 1.8em;
     font-family: 'Roboto Slab', sans-serif;
     font-size: 16px;
     color: #4f555a;
-}
-
-.about-list-item::before{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    content: "🗹";
-    font-family: "Flaticon";
-    color: #ef5f34;
 }
 
 .home-about-button{

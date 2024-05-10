@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useState} from "react"
 import "./header.css"
 import { IoMdMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { BiSearch } from "react-icons/bi"
 import { IoClose } from "react-icons/io5";
+import { IoIosArrowForward } from "react-icons/io";
 import SearchBar from "./SearchBar"
 import MobileMenu from "./MobileMenu";
 
@@ -52,13 +53,79 @@ export default function Header() {
                     </svg>
                 </div>
                 <div className="navbar">
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/causes">Causes</a>
-                    <a href="/shop">Shop</a>
-                    <a href="/pages">Pages</a>
-                    <a href="/blog">Blog</a>
-                    <a href="/contact">Contact</a>
+                    <div className="navbar-home">
+                        <a href="/">Home</a>
+                        <div className="sub-menu-home">
+                            <div className="sub-menu">
+                                <a href="/">Home Charity</a>
+                                <a href="/">Home Education</a>
+                                <a href="/">Home Wildlife</a>
+                                <a href="/">Ocean Pollution</a>
+                                <a href="/">World Pandemic</a>
+                                <a href="/">Home Nature</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="navbar-about">
+                        <a href="/about">About</a>
+                    </div>
+                    <div className="navbar-causes">
+                        <a href="/causes">Causes</a>
+                        <div className="sub-menu-causes">
+                            <div className="sub-menu">
+                                <a href="/">Causes</a>
+                                <a href="/">Causes Single</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="navbar-shop">
+                        <a href="/shop">Shop</a>
+                        <div className="sub-menu-shop">
+                            <div className="sub-menu">
+                                <a href="/">Shop Page</a>
+                                <a href="/">Shop Single</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="navbar-pages">
+                        <a href="/pages">Pages</a>
+                        <div className="sub-menu-pages">
+                            <div className="sub-menu">
+                                <a href="/">About</a>
+                                <a href="/">Services</a>
+                                <a href="/">Causes</a>
+                                <a href="/">Causes Single</a>
+                                <a href="/">Projects</a>
+                                <a href="/">Project Single</a>
+                                <a href="/">Events</a>
+                                <a href="/">Event Single</a>
+                                <a href="/">Volunteer</a>
+                                <a href="/">Volunteer Single</a>
+                                <a href="/">Testimonial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="navbar-blog">
+                        <a href="/blog">Blog</a>
+                        <div className="sub-menu-blog">
+                            <div className="sub-menu">
+                                <a href="/">Blog Default</a>
+                                <a href="/">Blog Left Sidebar</a>
+                                <a href="/">Blog Full Width</a>
+                                <div className="blog-details">
+                                    <a href="/">Blog Details <span><IoIosArrowForward/></span> </a>
+                                    <div className="sub-menu-blog-details">
+                                        <a href="/">Blog Default</a>
+                                        <a href="/">Blog Left Sidebar</a>
+                                        <a href="/">Blog Full Width</a>
+                                    </div>  
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                    <div className="navbar-contact">
+                        <a href="/contact">Contact</a>
+                    </div>
                 </div>
                 <div className="header-buttons">
                     <button className="header-button-donate">Donate Now</button>

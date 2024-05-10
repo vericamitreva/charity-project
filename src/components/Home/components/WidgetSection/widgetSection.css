@@ -63,6 +63,10 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.home-widget-section-widget-text:hover {
+    color: #ef5f34;
+}
+
 @media only screen and (max-width: 1200px) {
     .home-widget-section-container {
         grid-template-columns: 1fr 1fr;

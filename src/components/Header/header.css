@@ -5,6 +5,11 @@ header {
     position: relative;
 }
 
+.site-header {
+    position: sticky;
+    top: 0;
+}
+
 .mobile-menu{
     display: none;
     line-height: 20px;
@@ -30,7 +35,12 @@ header {
     justify-content: space-between;
 }
 
+.navbar {
+    display: flex;
+}
+
 .navbar a {
+    font-family: "Muli";
     padding: 35px 10px;
     font-size: 16px;
     color: #232f4b;
@@ -42,12 +52,126 @@ header {
 
 .navbar a:hover {
     color: #ef5f34;
-    border-bottom: 2px solid #ef5f34;
+    border-bottom: 4px solid #ef5f34;
+}
+
+.navbar-home, .navbar-causes, .navbar-shop, .navbar-pages, .navbar-blog {
+    position: relative;
+}
+
+.navbar-home:hover .sub-menu-home .sub-menu {
+    opacity: 1;
+    pointer-events: auto; 
+} 
+
+.navbar-causes:hover .sub-menu-causes .sub-menu {
+    opacity: 1;
+    pointer-events: auto; 
+} 
+
+.navbar-shop:hover .sub-menu-shop .sub-menu {
+    opacity: 1;
+    pointer-events: auto; 
+} 
+
+.navbar-pages:hover .sub-menu-pages .sub-menu {
+    opacity: 1;
+    pointer-events: auto; 
+} 
+
+.navbar-blog:hover .sub-menu-blog .sub-menu {
+    opacity: 1;
+    pointer-events: auto; 
+} 
+
+.sub-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px 0px rgba(62, 65, 159, 0.09);
+    width: 250px;
+    padding: 10px 0;
+    left: 0;
+    top: 61px;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s; 
+}
+
+.sub-menu a {
+    font-size: 1.2rem;
+    display: block;
+    border-bottom: 2px solid transparent;
+    padding: 10px 20px;
+    color: #212158;
+    overflow: hidden;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sub-menu a:hover {
+    font-family: "Muli";
+    position: relative;
+    color: #212158;
+    border-bottom: 2px solid transparent;
+}
+
+.sub-menu a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px; 
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease;
+}
+
+.sub-menu a:hover::after {
+    width: 50px;
+    background-color: #ef5f34;
+    transition: width 0.3s ease; 
+}
+
+.sub-menu-blog-details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px 0px rgba(62, 65, 159, 0.09);
+    width: 250px;
+    padding: 10px 0;
+    left: 0;
+    top: 61px;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s; 
+}
+
+.blog-details {
+    position: relative;
+}
+
+.blog-details svg {
+    padding-left: 75px;
+} 
+
+.blog-details:hover .sub-menu-blog-details {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sub-menu .sub-menu-blog-details {
+    left: 250px;
+    top: 0;
 }
 
 .header-buttons {
     display: flex;
-    gap:10px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -87,6 +211,10 @@ header {
     .header-button-donate {
         display: none;
     }
+
+    .navbar {
+        scale: 80%;
+    }
 }
   
 @media only screen and (max-width: 992px) {
@@ -105,5 +233,4 @@ header {
     header {
         background-color: white;
     }
-
 }

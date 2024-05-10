@@ -14,7 +14,9 @@ export default function EventsSection() {
                 </div>
                 <div className="cards-container">
                     <div className="card">
-                        <img src={Event1} alt="event-img"/>
+                        <div className="card-img-container">
+                            <img src={Event1} alt="event-img"/>
+                        </div>
                         <div className="green-element">
                             <p>30</p>
                             <p className="month">Nov</p>
@@ -27,7 +29,9 @@ export default function EventsSection() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Event2} alt="event-img"/>
+                        <div className="card-img-container">
+                            <img src={Event2} alt="event-img"/>
+                        </div>
                         <div className="green-element">
                             <p>25</p>
                             <p className="month">Oct</p>
@@ -40,7 +44,9 @@ export default function EventsSection() {
                         </div>
                     </div>
                     <div className="card">
-                        <img src={Event3} alt="event-img"/> 
+                        <div className="card-img-container">
+                            <img src={Event3} alt="event-img"/> 
+                        </div>
                         <div className="green-element">
                             <p>25</p>
                             <p className="month">Oct</p>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Aboutimg from "../../../../assets/home/about.jpg";
 import "./aboutsection.css";
 import { IoWalletSharp } from "react-icons/io5";
+import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const AboutSection = () => {
     const [rotation, setRotation] = useState(0);
@@ -22,6 +23,9 @@ const AboutSection = () => {
                     <div className="square-2" style={{ transform: `rotateY(-${rotation}deg)` }}></div>
                     <div className="home-about-image-container">
                         <img src={Aboutimg} alt="" className="home-about-img" />
+                        <div className="home-about-img-line">
+
+                        </div>
                     </div>
                     <div className="total-raised">
                         <div className="total-raised-wrap">
@@ -53,9 +57,9 @@ const AboutSection = () => {
                         gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 
                     <ul className="home-about-list">
-                        <li className="about-list-item">The standard chunk of Lorem Ipsum used since.</li>
-                        <li className="about-list-item">Randomised words which don't look even slightly believable.</li>
-                        <li className="about-list-item">Making this the first true generator on the Internet.</li>
+                        <li className="about-list-item"><span><IoMdCheckmarkCircleOutline color='#ef5f34' size={22}/></span>The standard chunk of Lorem Ipsum used since.</li>
+                        <li className="about-list-item"><span><IoMdCheckmarkCircleOutline color='#ef5f34' size={22}/></span>Randomised words which don't look even slightly believable.</li>
+                        <li className="about-list-item"><span><IoMdCheckmarkCircleOutline color='#ef5f34' size={22}/></span>Making this the first true generator on the Internet.</li>
                     </ul>
 
                     <a href="/" className="home-about-btn-link">
