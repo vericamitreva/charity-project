@@ -1,17 +1,17 @@
-import { useState} from "react"
+import { useState } from "react"
+import { Link } from "react-router-dom"
 import "./header.css"
-import { IoMdMenu } from "react-icons/io";
-import { MdClose } from "react-icons/md";
+import { IoMdMenu } from "react-icons/io"
+import { MdClose } from "react-icons/md"
 import { BiSearch } from "react-icons/bi"
-import { IoClose } from "react-icons/io5";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoClose } from "react-icons/io5"
+import { IoIosArrowForward } from "react-icons/io"
 import SearchBar from "./SearchBar"
-import MobileMenu from "./MobileMenu";
+import MobileMenu from "./MobileMenu"
+import Logo from "./../../assets/header/logo.svg"
 
-
-export default function Header() {
-
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
+export default function Header({ handleLinkClick }) {
+    const [isSearchOpen, setIsSearchOpen] = useState(false)
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     const handleSearchToggle = () => {
@@ -26,7 +26,7 @@ export default function Header() {
         <header>
             <div className="site-header">
                 <div className="mobile-menu">
-                    <button 
+                    <button
                         className={isMobileMenuOpen ? 'mobile-menu-button open' : 'mobile-menu-button'}
                         onClick={handleMobileMenuToggle}
                     >
@@ -42,89 +42,81 @@ export default function Header() {
                     />
                 </div>
                 <div className="logo">
-                    <svg width="190" height="auto" viewBox="0 0 534 146" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M75.7806 13.7457C75.7806 21.3381 69.6646 27.4914 62.1182 27.4914C54.5719 27.4914 48.4558 21.3381 48.4558 13.7457C48.4558 6.15333 54.5719 0 62.1182 0C69.6646 0 75.7806 6.15333 75.7806 13.7457Z" fill="#70C3D9"/>
-                    <path d="M37.4146 113.853C23.2733 102.315 14.0313 83.2946 14.0313 61.7612C14.0313 42.2138 21.6488 24.7305 33.635 13.0359C13.7854 23.6236 0 46.8239 0 73.7618C0 104.978 18.497 131.186 43.5112 138.551C41.0907 131.505 38.8967 123.255 37.4146 113.853Z" fill="#212158"/>
-                    <path d="M69.1403 125.489C61.7623 125.489 54.7337 123.796 48.307 120.762C48.0222 123.757 47.8734 126.791 47.8734 129.865C47.8734 133.205 48.074 136.487 48.4364 139.729C51.4912 140.302 54.6172 140.615 57.8143 140.615C79.2884 140.615 98.0184 127.065 107.985 106.964C98.0184 118.411 84.2913 125.489 69.1403 125.489Z" fill="#212158"/>
-                    <path d="M41.4208 116.054C41.4208 67.8689 76.855 28.8718 127 27.4523C125.609 27.3481 81.1459 24.1901 54.1577 40.7161C42.2104 33.2996 37.3305 20.9343 37.3305 20.9343C18.2122 85.1764 36.8645 129.057 46.579 146C43.2394 136.643 41.4208 126.563 41.4208 116.054Z" fill="#5DC4B8"/>
-                    <path d="M119.311 54.807C119.311 54.807 59.3158 32.3945 52.1384 95.3799C52.1384 95.3799 74.4215 74.2372 89.1259 72.0689C89.1259 72.0689 63.5679 91.3037 59.5553 101.631C59.5618 101.631 101.177 114.055 119.311 54.807Z" fill="#212158"/>
-                    <path d="M75.7806 13.7457C75.7806 21.3381 69.6646 27.4914 62.1182 27.4914C54.5719 27.4914 48.4558 21.3381 48.4558 13.7457C48.4558 6.15333 54.5719 0 62.1182 0C69.6646 0 75.7806 6.15333 75.7806 13.7457Z" fill="#5DC4B8"/>
-                    <path d="M182.741 114.036C175.672 114.036 169.623 112.54 164.592 109.548C159.595 106.523 155.765 102.315 153.102 96.9229C150.471 91.498 149.156 85.202 149.156 78.0347V76.21C149.156 69.207 150.471 63.0096 153.102 57.6177C155.732 52.1929 159.496 47.9352 164.395 44.8447C169.294 41.7214 175.146 40.1597 181.952 40.1597C186.719 40.1597 191.141 40.8665 195.218 42.2803C199.295 43.694 202.845 45.6831 205.87 48.2476V64.8179H196.401L195.119 53.7217C194.034 52.9326 192.834 52.2586 191.519 51.6997C190.204 51.1408 188.757 50.7134 187.179 50.4175C185.634 50.1216 183.941 49.9736 182.1 49.9736C177.793 49.9736 174.094 51.0586 171.003 53.2285C167.946 55.3984 165.611 58.4396 164 62.3521C162.389 66.2645 161.584 70.8509 161.584 76.1113V78.0347C161.584 83.4924 162.439 88.1938 164.148 92.1392C165.858 96.0516 168.307 99.0599 171.497 101.164C174.719 103.268 178.565 104.32 183.037 104.32C185.207 104.32 187.344 104.074 189.448 103.581C191.585 103.055 193.459 102.381 195.07 101.559L196.401 91.498H205.771V107.97C203.01 109.778 199.623 111.241 195.612 112.359C191.634 113.477 187.344 114.036 182.741 114.036ZM212.873 113V105.405L220.271 103.926V45.1899L212.429 43.7104V36.0664H232.649V66.5439C234.391 64.0452 236.545 62.1055 239.109 60.7246C241.674 59.3438 244.567 58.6533 247.789 58.6533C253.28 58.6533 257.587 60.4123 260.71 63.9302C263.866 67.4152 265.444 72.8071 265.444 80.106V103.926L272.842 105.405V113H246.063V105.405L253.066 103.926V80.0073C253.066 75.9305 252.244 72.988 250.6 71.1797C248.956 69.3714 246.54 68.4673 243.351 68.4673C241.082 68.4673 239.027 68.9769 237.186 69.9961C235.378 70.9824 233.865 72.3797 232.649 74.188V103.926L239.652 105.405V113H212.873ZM295.971 114.036C290.546 114.036 286.322 112.638 283.297 109.844C280.272 107.049 278.76 103.202 278.76 98.3037C278.76 94.9502 279.68 92.0076 281.521 89.4761C283.363 86.9445 286.059 84.9718 289.609 83.5581C293.16 82.1115 297.467 81.3882 302.53 81.3882H310.667V76.9004C310.667 74.0729 309.813 71.8208 308.103 70.144C306.426 68.4673 303.977 67.6289 300.755 67.6289C298.914 67.6289 297.286 67.859 295.873 68.3193C294.459 68.7467 293.193 69.3714 292.075 70.1934L290.941 77.3936H281.817L281.719 64.2261C284.349 62.5164 287.275 61.1685 290.497 60.1821C293.719 59.1629 297.303 58.6533 301.248 58.6533C308.021 58.6533 313.347 60.2479 317.227 63.437C321.139 66.5933 323.095 71.1304 323.095 77.0483V100.572C323.095 101.296 323.095 102.002 323.095 102.693C323.128 103.383 323.177 104.057 323.243 104.715L328.668 105.405V113H312.443C312.114 111.849 311.802 110.731 311.506 109.646C311.243 108.562 311.046 107.477 310.914 106.392C309.139 108.627 306.985 110.468 304.454 111.915C301.955 113.329 299.127 114.036 295.971 114.036ZM298.782 104.419C301.281 104.419 303.615 103.844 305.785 102.693C307.955 101.509 309.583 100.03 310.667 98.2544V89.3281H302.382C298.667 89.3281 295.856 90.1994 293.949 91.9419C292.075 93.6515 291.138 95.6571 291.138 97.9585C291.138 100.03 291.796 101.624 293.111 102.742C294.426 103.86 296.316 104.419 298.782 104.419ZM335.326 113V105.405L342.723 103.926V68.7632L334.931 67.2837V59.6396H354.165L354.806 66.3467L354.904 67.4316C356.318 64.6042 358.044 62.4342 360.083 60.9219C362.154 59.4095 364.57 58.6533 367.332 58.6533C368.253 58.6533 369.222 58.7355 370.242 58.8999C371.294 59.0643 372.149 59.2451 372.806 59.4424L371.376 70.9331L364.422 70.5386C362.154 70.4071 360.28 70.8509 358.8 71.8701C357.354 72.8893 356.137 74.3031 355.151 76.1113V103.926L362.548 105.405V113H335.326ZM377.886 113V105.405L385.283 103.926V68.7632L377.442 67.2837V59.6396H397.711V103.926L405.059 105.405V113H377.886ZM384.79 47.5571V36.0664H397.711V47.5571H384.79ZM430.802 113.937C426.265 113.937 422.731 112.671 420.199 110.14C417.668 107.575 416.402 103.498 416.402 97.9092V68.5166H408.61V59.6396H416.402V46.6694H428.78V59.6396H439.334V68.5166H428.78V97.9092C428.78 100.178 429.241 101.838 430.161 102.89C431.115 103.909 432.397 104.419 434.008 104.419C434.928 104.419 435.948 104.337 437.065 104.172C438.216 104.008 439.137 103.844 439.827 103.679L441.109 112.408C439.663 112.836 438.002 113.197 436.128 113.493C434.287 113.789 432.512 113.937 430.802 113.937ZM447.225 113V105.405L454.622 103.926V68.7632L446.781 67.2837V59.6396H467.05V103.926L474.398 105.405V113H447.225ZM454.129 47.5571V36.0664H467.05V47.5571H454.129ZM504.925 114.036C499.796 114.036 495.39 112.885 491.708 110.583C488.026 108.282 485.198 105.093 483.226 101.016C481.253 96.9064 480.267 92.1885 480.267 86.8623V85.8267C480.267 80.5334 481.253 75.8483 483.226 71.7715C485.198 67.6947 488.026 64.4891 491.708 62.1548C495.39 59.8205 499.763 58.6533 504.826 58.6533C509.955 58.6533 514.361 59.8205 518.043 62.1548C521.725 64.4562 524.553 67.6453 526.525 71.7222C528.498 75.799 529.484 80.5005 529.484 85.8267V86.8623C529.484 92.1885 528.498 96.9064 526.525 101.016C524.553 105.093 521.725 108.282 518.043 110.583C514.394 112.885 510.021 114.036 504.925 114.036ZM504.925 104.468C507.687 104.468 509.955 103.729 511.73 102.249C513.539 100.737 514.887 98.6654 515.774 96.0352C516.662 93.3721 517.106 90.3145 517.106 86.8623V85.8267C517.106 82.4074 516.662 79.3826 515.774 76.7524C514.887 74.1222 513.539 72.0509 511.73 70.5386C509.922 69.0262 507.621 68.27 504.826 68.27C502.097 68.27 499.829 69.0262 498.021 70.5386C496.212 72.0509 494.864 74.1222 493.977 76.7524C493.122 79.3826 492.694 82.4074 492.694 85.8267V86.8623C492.694 90.3145 493.122 93.3721 493.977 96.0352C494.864 98.6654 496.212 100.737 498.021 102.249C499.862 103.729 502.163 104.468 504.925 104.468Z" fill="#212158"/>
-                    </svg>
+                        <img src={Logo} alt="Logo"/>
                 </div>
                 <div className="navbar">
                     <div className="navbar-home">
-                        <a href="/">Home</a>
+                        <Link to="/" onClick={handleLinkClick}>Home</Link>
                         <div className="sub-menu-home">
                             <div className="sub-menu">
-                                <a href="/">Home Charity</a>
-                                <a href="/">Home Education</a>
-                                <a href="/">Home Wildlife</a>
-                                <a href="/">Ocean Pollution</a>
-                                <a href="/">World Pandemic</a>
-                                <a href="/">Home Nature</a>
+                                <Link to="/">Home Charity</Link>
+                                <Link to="/">Home Education</Link>
+                                <Link to="/">Home Wildlife</Link>
+                                <Link to="/">Ocean Pollution</Link>
+                                <Link to="/">World Pandemic</Link>
+                                <Link to="/">Home Nature</Link>
                             </div>
                         </div>
                     </div>
                     <div className="navbar-about">
-                        <a href="/about">About</a>
+                        <Link to="/" onClick={handleLinkClick}>About</Link>
                     </div>
                     <div className="navbar-causes">
-                        <a href="/causes">Causes</a>
+                        <Link to="/" onClick={handleLinkClick}>Causes</Link>
                         <div className="sub-menu-causes">
                             <div className="sub-menu">
-                                <a href="/">Causes</a>
-                                <a href="/">Causes Single</a>
+                                <Link to="/">Causes</Link>
+                                <Link to="/">Causes Single</Link>
                             </div>
                         </div>
                     </div>
                     <div className="navbar-shop">
-                        <a href="/shop">Shop</a>
+                        <Link to="/" onClick={handleLinkClick}>Shop</Link>
                         <div className="sub-menu-shop">
                             <div className="sub-menu">
-                                <a href="/">Shop Page</a>
-                                <a href="/">Shop Single</a>
+                                <Link to="/">Shop Page</Link>
+                                <Link to="/">Shop Single</Link>
                             </div>
                         </div>
                     </div>
                     <div className="navbar-pages">
-                        <a href="/pages">Pages</a>
+                        <Link to="/" onClick={handleLinkClick}>Pages</Link>
                         <div className="sub-menu-pages">
                             <div className="sub-menu">
-                                <a href="/">About</a>
-                                <a href="/">Services</a>
-                                <a href="/">Causes</a>
-                                <a href="/">Causes Single</a>
-                                <a href="/">Projects</a>
-                                <a href="/">Project Single</a>
-                                <a href="/">Events</a>
-                                <a href="/">Event Single</a>
-                                <a href="/">Volunteer</a>
-                                <a href="/">Volunteer Single</a>
-                                <a href="/">Testimonial</a>
+                                <Link to="/">About</Link>
+                                <Link to="/">Services</Link>
+                                <Link to="/">Causes</Link>
+                                <Link to="/">Causes Single</Link>
+                                <Link to="/">Projects</Link>
+                                <Link to="/">Project Single</Link>
+                                <Link to="/">Events</Link>
+                                <Link to="/">Event Single</Link>
+                                <Link to="/">Volunteer</Link>
+                                <Link to="/">Volunteer Single</Link>
+                                <Link to="/">Testimonial</Link>
                             </div>
                         </div>
                     </div>
                     <div className="navbar-blog">
-                        <a href="/blog">Blog</a>
+                        <Link to="/" onClick={handleLinkClick}>Blog</Link>
                         <div className="sub-menu-blog">
                             <div className="sub-menu">
-                                <a href="/">Blog Default</a>
-                                <a href="/">Blog Left Sidebar</a>
-                                <a href="/">Blog Full Width</a>
+                                <Link to="/">Blog Default</Link>
+                                <Link to="/">Blog Left Sidebar</Link>
+                                <Link to="/">Blog Full Width</Link>
                                 <div className="blog-details">
-                                    <a href="/">Blog Details <span><IoIosArrowForward/></span> </a>
+                                    <Link to="/">Blog Details <span><IoIosArrowForward/></span> </Link>
                                     <div className="sub-menu-blog-details">
-                                        <a href="/">Blog Default</a>
-                                        <a href="/">Blog Left Sidebar</a>
-                                        <a href="/">Blog Full Width</a>
+                                        <Link to="/">Blog Default</Link>
+                                        <Link to="/">Blog Left Sidebar</Link>
+                                        <Link to="/">Blog Full Width</Link>
                                     </div>  
                                 </div>      
                             </div>
                         </div>
                     </div>
                     <div className="navbar-contact">
-                        <a href="/contact">Contact</a>
+                        <Link to="/contact" onClick={handleLinkClick}>Contact</Link>
                     </div>
                 </div>
                 <div className="header-buttons">
@@ -134,19 +126,19 @@ export default function Header() {
                         onClick={handleSearchToggle}
                     >
                         {isSearchOpen ? (
-                        <IoClose size={22} />
+                            <IoClose size={22} />
                         ) : (
-                        <BiSearch size={22} />
+                            <BiSearch size={22} />
                         )}
                     </button>
                 </div>
-
             </div>
             <div className="search-bar-container">
                 <SearchBar 
-                isSearchOpen={isSearchOpen} 
-                handleSearchToggle={handleSearchToggle} />
+                    isSearchOpen={isSearchOpen} 
+                    handleSearchToggle={handleSearchToggle} 
+                />
             </div>
         </header>
-    );
+    )
 }

@@ -190,6 +190,10 @@
   transition: opacity 0.9s, background-color 0.9s;
 }
 
+.arrow-up:hover {
+  cursor: pointer;
+}
+
 .arrow-up.show {
   opacity: 1; 
   background-color: rgba(239, 95, 52, 0.8);

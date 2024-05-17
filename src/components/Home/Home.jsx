@@ -1,4 +1,5 @@
-import "./home.css"
+import React from "react"
+import "./home.css";
 import HeroSection from "./components/HeroSection/HeroSection"
 import WidgetSection from "./components/WidgetSection/WidgetSection"
 import AboutSection from "./components/AboutSection/AboutSection"
@@ -12,10 +13,11 @@ import PartnersDonorsSection from "./components/PartnersDonorsSection/PartnersDo
 import FooterSection from "./components/FooterSeaction/FooterSection"
 
 export default function Home() {
+
     return (
         <div className="home-container">
-            <HeroSection/>
-            <WidgetSection/>
+            <HeroSection />
+            <WidgetSection />
             <AboutSection />
             <FeaturedCampaigns />
             <TeamSection />

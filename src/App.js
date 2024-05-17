@@ -1,14 +1,41 @@
-import Header from "./components/Header/Header";
-import Homepage from "./pages/Homepage";
+import "./App.css"
+import React, { useState, useEffect } from "react"
+import Header from "./components/Header/Header"
+import Homepage from "./pages/Homepage"
+import Preloader from "./assets/home/preloader.png"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-function App() {
+export default function App() {
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 1000)
+
+    return () => clearTimeout(timer)
+  }, [loading])
+
+
+ function handleLinkClick() {
+    setLoading(true)
+  }
+
   return (
-    <div className="app-container">
-        <div className="decorative-element"></div>
-        <Header/>
-        <Homepage/>
-    </div>
-  );
+    <Router>
+      <div className="app-container">
+        <div className={`preloader ${loading ? "" : "hidden"}`}>
+          <div className="preloader-content">
+            <img src={Preloader} alt="Loading..." />
+            <div className="loading-line-outer"></div>
+            <div className="loading-line-inner"></div>
+          </div>
+        </div>
+        <Header handleLinkClick={handleLinkClick} />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+        </Routes>
+      </div>
+    </Router>
+  )
 }
-
-export default App;
