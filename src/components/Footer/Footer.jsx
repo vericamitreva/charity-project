@@ -1,5 +1,5 @@
-import "./footerSection.css"
-import Logo from "./../../../../assets/home/logo.png"
+import "./footer.css"
+import Logo from "./../../assets/home/logo.png"
 import { TfiEmail } from "react-icons/tfi";
 import { PiDeviceMobile } from "react-icons/pi";
 import { SlLocationPin } from "react-icons/sl";

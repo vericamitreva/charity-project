@@ -1,0 +1,205 @@
+.contact-section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section-header::before {
+    background: #212158;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.contact-section-header {
+    background: url("./../../assets/home/contact-us.jpg") no-repeat top / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-section-header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section-header-text h2 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
+}
+
+.contact-section-body {
+    width: 90%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-cards {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-card {
+    padding: 40px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 100%;
+    box-shadow: 0px 1px 15px 0px rgba(62, 65, 159, 0.15);
+}
+
+.contact-card h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #212158;
+    font-family: 'Roboto Slab', serif;
+}
+
+.contact-card p {
+    font-size: 16px;
+    color: #4f555a;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-icon {
+    width: 85px;
+    height: 85px;
+    background: #f5f5f5;
+    line-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.get-in-touch {
+    text-align: center;
+    width: 45%;
+}
+
+.get-in-touch h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: #212158;
+    font-family: 'Roboto Slab', serif;
+}
+
+.get-in-touch p {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.7em;
+    margin: 0 0 1.5em;
+    color:#4f555a;;
+}
+
+.contact-form {
+    width: 80%;
+    padding: 50px;
+    background: #fff;
+    box-shadow: 0px 1px 15px 0px rgba(62, 65, 159, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 99;
+}
+
+.contact-form input {
+    background: #f9f9f9;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #E3E3E3;
+    border-radius: 0px;
+    box-shadow: none !important;
+    padding-left: 25px;
+}
+
+.contact-form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contact-form-message {
+    height: 200px !important;
+}
+
+.submit-button {
+    display: inline-block;
+    align-self: center;
+    padding-inline: 50px;
+    margin-bottom: 30px;
+    height: 55px;
+    background: #ef5f34;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+}
+
+.contact-section-map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact-cards {
+        grid-template-columns: repeat(auto-fill, minmax(35%, 1fr));
+    }
+
+    .get-in-touch {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-cards {
+        grid-template-columns: repeat(auto-fit, minmax(60%, 1fr)); 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-form-row {
+        flex-direction: column;
+        width: calc(100% - 25px);
+    }
+
+}
