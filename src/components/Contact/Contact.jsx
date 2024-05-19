@@ -50,11 +50,11 @@ export default function Contact() {
             <div className='contact-form-row'>
               <input className='contact-form-message' placeholder='Message' required="true" type="text" name='text'></input>
             </div>
-            <button className='submit-button'>Submit Now</button>
+            <button className='contact-submit-button'>Submit Now</button>
           </div>
         </div>
         <div className='contact-section-map'>
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5600.5902695444565!2d-86.90458035390867!3d40.04196654178946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2smk!4v1716111901007!5m2!1sen!2smk" title="map" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>

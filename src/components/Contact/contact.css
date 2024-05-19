@@ -157,20 +157,19 @@
     height: 200px !important;
 }
 
-.submit-button {
-    display: inline-block;
+.contact-submit-button {
     align-self: center;
-    padding-inline: 50px;
+    padding: 1rem 3rem;
     margin-bottom: 30px;
-    height: 55px;
     background: #ef5f34;
     color: #fff;
     font-size: 16px;
     font-weight: 700;
     transition: .3s;
+    border:none
 }
 
-.submit-button:hover {
+.contact-submit-button:hover {
     cursor: pointer;
 }
 
@@ -178,6 +177,11 @@
     width: 100%;
     height: 400px;
     margin-top: 20px;
+}
+
+.contact-section-map iframe {
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
