@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Aboutimg from "./about-2.png"
 import "./charitioabout.css"
 import { IoWalletSharp } from "react-icons/io5"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 
 const AboutSection = () => {
-    const [rotation, setRotation] = useState(0)
+    // const [rotation, setRotation] = useState(0)
 
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            setRotation(prevRotation => prevRotation + 1)
-        }, 10)
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         setRotation(prevRotation => prevRotation + 1)
+    //     }, 10)
 
-        return () => clearInterval(intervalId)
-    }, [])
+    //     return () => clearInterval(intervalId)
+    // }, [])
 
     return (
         <div className="charitio-about-section">
