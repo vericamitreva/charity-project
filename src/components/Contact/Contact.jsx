@@ -54,7 +54,7 @@ export default function Contact() {
           </div>
         </div>
         <div className='contact-section-map'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5600.5902695444565!2d-86.90458035390867!3d40.04196654178946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2smk!4v1716111901007!5m2!1sen!2smk" title="map" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5211.560631512847!2d-86.90781914948616!3d40.04185566571644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881329e05fe7e649%3A0x883e8648872984a6!2s7%20S%20Green%20St%2C%20Crawfordsville%2C%20IN%2047933%2C%20USA!5e0!3m2!1sen!2smk!4v1716116655987!5m2!1sen!2smk" title="map" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
