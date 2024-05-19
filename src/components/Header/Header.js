@@ -59,7 +59,7 @@ export default function Header({ handleLinkClick }) {
                         </div>
                     </div>
                     <div className="navbar-about">
-                        <Link to="/" onClick={handleLinkClick}>About</Link>
+                        <Link to="/about" onClick={handleLinkClick}>About</Link>
                     </div>
                     <div className="navbar-causes">
                         <Link to="/" onClick={handleLinkClick}>Causes</Link>

@@ -1,0 +1,149 @@
+.about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-header::before {
+    background: #212158;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.about-header {
+    background: url("./../../assets/home/contact-us.jpg") no-repeat top / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-header-text h2 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
+}
+
+.about-video-section{
+    width: 100%;
+    padding-block: 60px;
+}
+
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.video-container::after{
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    width: 107%;
+    height: 56%;
+    background: linear-gradient(to left, #5dc4b8, #40aea2);
+    content: "";
+    z-index: -1;
+}
+
+.video-cover {
+    position: relative;
+    cursor: pointer;
+}
+
+.cover-image {
+    width: 100%;
+    display: block;
+}
+
+.video-cover::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+    z-index: 1;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    pointer-events: none;
+    z-index: 100;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video-heading{
+    color: #212158;
+    font-size: 36px;
+    max-width: 625px;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    line-height: 55px;
+    margin-top: 15px;
+}
+
+.video-heading span{
+    color: #5dc4b8;
+}
+
+@media screen and (max-width: 777px){
+    .about-video-section{
+        padding-top: 0;
+    }
+   
+    .video-container::after{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .video-container{
+        height: 300px;
+    }
+   
+    
+}
