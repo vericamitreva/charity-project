@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import "./../Header/mobileMenu.css"
-import { MdClose } from "react-icons/md";
-import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowDown } from "react-icons/io";
-import { IoMdMenu } from "react-icons/io";
+import { MdClose } from "react-icons/md"
+import { IoIosArrowForward } from "react-icons/io"
+import { IoIosArrowDown } from "react-icons/io"
+import { IoMdMenu } from "react-icons/io"
 
 
 export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
@@ -58,8 +58,8 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                         <button className='item-button' 
                             onClick={handleHomeToggle}
                         >
-                            <div className='mobile-navbar-item'>
-                                <div>Home</div> 
+                            <div className='mobile-navbar-item' style={{cursor: 'pointer'}}>
+                                <p>Home</p>
                                 <div>  
                                     {isHomeActive ? (<IoIosArrowDown/>)
                                     :(<IoIosArrowForward/>)} 
@@ -75,13 +75,13 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                             <a href="/">Home Nature</a>
                         </div>
                     </div>
-                    <a href="/about" className='a-item'>About</a>
+                    <a href="/about" className='a-item' style={{cursor: 'pointer'}}>About</a>
                     <div className='item'>
                         <button className='item-button' 
                             onClick={handleCausesToggle}
                         >
-                            <div className='mobile-navbar-item'>
-                                <div>Causes</div> 
+                            <div className='mobile-navbar-item' style={{cursor: 'pointer'}}>
+                                <p>Causes</p>
                                 <div>  
                                     {isCausesActive ? (<IoIosArrowDown/>)
                                     :(<IoIosArrowForward/>)} 
@@ -97,7 +97,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                         <button className='item-button' 
                             onClick={handleShopToggle}
                         >
-                            <div className='mobile-navbar-item'>
+                            <div className='mobile-navbar-item' style={{cursor: 'pointer'}}>
                                 <div>Shop</div> 
                                 <div>  
                                     {isShopActive ? (<IoIosArrowDown/>)
@@ -106,7 +106,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                             </div>
                         </button>
                         <div className={`sub-items ${isShopActive ? 'open' : ''}`}>
-                            <a href="/">Shop Page</a>
+                            <a href="/shop">Shop Page</a>
                             <a href="/">Shop Single</a>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                         <button className='item-button' 
                             onClick={handlePagesToggle}
                         >
-                            <div className='mobile-navbar-item'>
+                            <div className='mobile-navbar-item' style={{cursor: 'pointer'}}>
                                 <div>Pages</div> 
                                 <div>  
                                     {isPagesActive ? (<IoIosArrowDown/>)
@@ -123,7 +123,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                             </div>
                         </button>
                         <div className={`sub-items ${isPagesActive ? 'open' : ''}`}>
-                            <a href="/">About</a>
+                            <a href="/about">About</a>
                             <a href="/">Services</a>
                             <a href="/">Causes</a>
                             <a href="/">Causes Single</a>
@@ -140,7 +140,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                         <button className='item-button' 
                             onClick={handleBlogToggle}
                         >
-                            <div className='mobile-navbar-item'>
+                            <div className='mobile-navbar-item' style={{cursor: 'pointer'}}>
                                 <div>Blog</div> 
                                 <div>  
                                     {isBlogActive ? (<IoIosArrowDown/>)
@@ -156,7 +156,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                         <button className='item-button' 
                             onClick={handleBlogDetailsToggle}
                         >
-                            <div className='mobile-navbar-item'>
+                            <div className='mobile-navbar-item' style={{cursor: 'pointer'}}>
                                 <div>Blog Details</div> 
                                 <div>  
                                     {isBlogDetailsActive ? (<IoIosArrowDown/>)
@@ -172,7 +172,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                     </div>
                         </div>
                     </div>
-                    <a href="/contact">Contact</a>
+                    <a href="/contact" style={{cursor: 'pointer'}}>Contact</a>
                 </div>
             </div>
         </div>

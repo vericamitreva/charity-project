@@ -1,71 +1,76 @@
-# Getting Started with Create React App
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1a49f172-9077-45ae-a642-ba8974af18e5/deploy-status)](https://app.netlify.com/sites/graceful-toffee-14539f/deploys)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Charity Website
 
-## Available Scripts
+React-based charity website that features a dynamic experience.
 
-In the project directory, you can run:
+![screenshot](./src/components/assets/screenshot.png)
 
-### `npm start`
+The website allows users to explore various charity projects with an optimal layout for each page based on their device's screen size. Users can see hover states for all interactive elements and toggle between tabs to access new information. The site ensures a seamless experience across different devices, enhancing accessibility and engagement.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- JavaScript
+- React.js
+- HTML5
+- CSS3
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Demo Link](https://charity-project-react.netlify.app/)
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple example steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* You need npm to be installed on your local machine. For details please use the following site: 
+https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Next you need to clone the repository on your local machine with the following command line:
+git clone https://github.com/vericamitreva/charity-project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* To install the project you need to enter the directory you've cloned. Open a terminal and follow these next steps:
+* npm install (to install all the necessary modules and dependencies)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Usage
 
-## Learn More
+* To run this project localy simply run the following line:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* And the project should be deployed on your machine and you can access it on a browser by default on the URL: localhost:3000
 
-### Code Splitting
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Verica Mitreva
+- Marija Buteska
 
-### Analyzing the Bundle Size
+👤 **Author1**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- GitHub: [@githubhandle](https://github.com/vericamitreva)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/vericamitreva)
 
-### Making a Progressive Web App
+👤 **Author2**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- GitHub: [@githubhandle](https://github.com/MarijaBute)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marija-buteska-458a34263/)
 
-### Advanced Configuration
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions, issues, and feature requests are welcome!
 
-### Deployment
+Feel free to check the [issues page](issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Show your support
 
-### `npm run build` fails to minify
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+
+This project is [MIT](lic.url) licensed.
