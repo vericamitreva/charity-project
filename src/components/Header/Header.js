@@ -71,10 +71,10 @@ export default function Header({ handleLinkClick }) {
                         </div>
                     </div>
                     <div className="navbar-shop">
-                        <Link to="/" onClick={handleLinkClick}>Shop</Link>
+                        <Link to="/shop" onClick={handleLinkClick}>Shop</Link>
                         <div className="sub-menu-shop">
                             <div className="sub-menu">
-                                <Link to="/">Shop Page</Link>
+                                <Link to="/shop">Shop Page</Link>
                                 <Link to="/">Shop Single</Link>
                             </div>
                         </div>

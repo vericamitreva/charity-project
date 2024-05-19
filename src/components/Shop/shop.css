@@ -1,0 +1,103 @@
+.shop-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-header::before {
+    background: #212158;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.shop-header {
+    background: url("./../../assets/home/contact-us.jpg") no-repeat top / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.shop-header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-header-text h2 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-family: "Roboto Slab", serif;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-block: 60px;
+}
+
+.item {
+    width: 100%;
+    height: auto;
+}
+
+.item-img{
+    width: 400px;
+    height: 400px;
+}
+
+.item-name{
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 0 0.4em;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.item-name:hover{
+    color: #ef5f34;
+}
+
+.prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.old-price{
+    color: #aaa;
+    font-weight: 500;
+    display: inline-block;
+    padding-right: 10px;
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 1080px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .shop-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

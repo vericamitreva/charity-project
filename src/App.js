@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer"
 import Contact from "./components/Contact/Contact"
 import About from "./components/About/About"
 import Causes from "./components/Causes/Causes"
+import Shop from "./components/Shop/Shop"
 
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/causes" element={<Causes/>}/>
+          <Route path="/shop" element={<Shop/>}/>
         </Routes>
         <Footer />
       </div>
