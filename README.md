@@ -4,7 +4,7 @@
 
 React-based charity website that features a dynamic experience.
 
-![screenshot](./src/components/assets/screenshot.png)
+![screenshot](./src/assets/screenshot.png)
 
 The website allows users to explore various charity projects with an optimal layout for each page based on their device's screen size. Users can see hover states for all interactive elements and toggle between tabs to access new information. The site ensures a seamless experience across different devices, enhancing accessibility and engagement.
 
