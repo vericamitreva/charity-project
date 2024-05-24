@@ -50,7 +50,7 @@ export default function Header({ handleLinkClick }) {
                         <div className="sub-menu-home">
                             <div className="sub-menu">
                                 <Link to="/">Home Charity</Link>
-                                <Link to="/">Home Education</Link>
+                                <Link to="/education">Home Education</Link>
                                 <Link to="/">Home Wildlife</Link>
                                 <Link to="/">Ocean Pollution</Link>
                                 <Link to="/">World Pandemic</Link>

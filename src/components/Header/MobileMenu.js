@@ -68,7 +68,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                         </button>
                         <div className={`sub-items ${isHomeActive ? 'open' : ''}`}>
                             <a href="/">Home Charity</a>
-                            <a href="/">Home Education</a>
+                            <a href="/education">Home Education</a>
                             <a href="/">Home Wildlife</a>
                             <a href="/">Home Pollution</a>
                             <a href="/">Home Pandemic</a>

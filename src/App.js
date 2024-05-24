@@ -9,6 +9,7 @@ import Contact from "./components/Contact/Contact"
 import About from "./components/About/About"
 import Causes from "./components/Causes/Causes"
 import Shop from "./components/Shop/Shop"
+import Education from "./components/Home Education/Education"
 
 
 export default function App() {
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/causes" element={<Causes/>}/>
           <Route path="/shop" element={<Shop/>}/>
+          <Route path="/education" element={<Education/>}/>
         </Routes>
         <Footer />
       </div>
