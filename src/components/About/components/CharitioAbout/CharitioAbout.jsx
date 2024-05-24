@@ -26,7 +26,7 @@ const AboutSection = () => {
                     <div className="charitio-about-image-container">
                         <img src={Aboutimg} alt="" className="charitio-about-img" />
                     </div>
-                    <div className="total-raised">
+                    <div className="charitio-total-raised">
                         <div className="total-raised-wrap">
                             <div className="total-raised-icon">
                             <IoWalletSharp style={{fontSize: "20px",color: "#ef5f34", verticalAlign: "middle"}}/>

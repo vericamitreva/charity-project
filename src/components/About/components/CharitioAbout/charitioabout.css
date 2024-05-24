@@ -98,7 +98,7 @@
     border-radius: 15px;
 }
 
-.total-raised{
+.charitio-total-raised{
     padding: 15px 20px;
     background: #fff;
     border-radius: 15px;
@@ -269,7 +269,7 @@
         margin-top: 0;
     }
 
-    .total-raised{
+    .charitio-total-raised{
         position: relative;
         left: -30px;
         top: -130px;
@@ -278,7 +278,7 @@
 
 
 @media screen and (max-width: 600px){
-    .total-raised{
+    .charitio-total-raised{
         width: 300px;
     }
     .charitio-about-img{
@@ -290,7 +290,7 @@
     .charitio-about-container{
         margin-inline: 2em;
     }
-    .total-raised{
+    .charitio-total-raised{
         top: 0;
         left: 0;
     }
@@ -303,12 +303,6 @@
     }
 }
 
-@media screen and (max-width: 500px){
-    .total-raised{
-        width: 90%;
-    }
-  
-}
 
 @media screen and (max-width: 400px){
     .charitio-about-img{
