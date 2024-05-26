@@ -16,7 +16,7 @@ export default function EducationHero() {
                     <p className="education-subtitle">We help local nonprofits access the funding, tools, training, and support they need to become more.</p>
                 
                     <div className="education-hero-btn">
-                        <a href="" className="education-button">Get Started</a>
+                        <a href="/" className="education-button">Get Started</a>
                     </div>
                 
                 </div>
