@@ -7,7 +7,7 @@
     top: 0;
     opacity: 0;
     left: -400px; 
-    width: 25%;
+    width: 40%;
     height: 100%;
     background: #212158;
     transition: left 0.5s ease-in, opacity 0.5s ease-in; 
