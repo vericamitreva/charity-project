@@ -89,7 +89,7 @@ export default function MobileMenu({isMobileMenuOpen, handleMobileMenuToggle}) {
                             </div>
                         </button>
                         <div className={`sub-items ${isCausesActive ? 'open' : ''}`}>
-                            <a href="/">Causes</a>
+                            <a href="/causes">Causes</a>
                             <a href="/">Causes Single</a>
                         </div>
                     </div>

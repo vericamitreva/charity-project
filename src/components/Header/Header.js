@@ -107,9 +107,9 @@ export default function Header({ handleLinkClick }) {
                                 <div className="blog-details">
                                     <Link to="/">Blog Details <span><IoIosArrowForward/></span> </Link>
                                     <div className="sub-menu-blog-details">
-                                        <Link to="/">Blog Default</Link>
-                                        <Link to="/">Blog Left Sidebar</Link>
-                                        <Link to="/">Blog Full Width</Link>
+                                        <Link to="/">Blog Single Default</Link>
+                                        <Link to="/">Blog Single Left Sidebar</Link>
+                                        <Link to="/">Blog Single Full Width</Link>
                                     </div>  
                                 </div>      
                             </div>
