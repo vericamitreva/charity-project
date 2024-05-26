@@ -1,16 +1,15 @@
 import "./App.css"
 import React, { useState, useEffect } from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Header from "./components/Header/Header"
 import Homepage from "./pages/Homepage"
 import Preloader from "./assets/home/preloader.png"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Footer from "./components/Footer/Footer"
 import Contact from "./components/Contact/Contact"
 import About from "./components/About/About"
 import Causes from "./components/Causes/Causes"
 import Shop from "./components/Shop/Shop"
 import Education from "./components/Home Education/Education"
-
 
 export default function App() {
   const [loading, setLoading] = useState(false)
@@ -23,8 +22,7 @@ export default function App() {
     return () => clearTimeout(timer)
   }, [loading])
 
-
- function handleLinkClick() {
+  function handleLinkClick() {
     setLoading(true)
   }
 
@@ -41,11 +39,11 @@ export default function App() {
         <Header handleLinkClick={handleLinkClick} />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/causes" element={<Causes/>}/>
-          <Route path="/shop" element={<Shop/>}/>
-          <Route path="/education" element={<Education/>}/>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/causes" element={<Causes />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/education" element={<Education />} />
         </Routes>
         <Footer />
       </div>
