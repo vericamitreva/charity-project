@@ -12,6 +12,8 @@
     background: #212158;
     transition: left 0.5s ease-in, opacity 0.5s ease-in; 
     z-index: 1000;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .mobile-navbar-container.open {
